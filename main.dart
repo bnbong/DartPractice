@@ -1,7 +1,9 @@
 void main() {
-    // saving API keys ..
-    const API = '123123123';
+  String name = "Junhyeok";
+  bool alive = true;
+  int age = 12;
+  double money = 67.66;
 
-    const max_allowed_price = 123;
-
+  num x = 12; // father of double, int
+  x = 1.1;
 }

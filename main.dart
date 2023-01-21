@@ -1,9 +1,21 @@
-String sayHello(String name) {
-  return "Hello $name, nice to meet you!";
-} // same as String sayHello(String name) => "Hello $name, nice to meet you!";
-
-num plus(num a, num b) => a + b;
+String sayHello({
+  required String name,
+  required int age,
+  required String country,
+}) {
+  return "Hello $name, you are $age, and you are come from $country";
+}
 
 void main() {
-  print(sayHello('JunHyeok'));
+  print(sayHello(
+    age: 23,
+    country: 'Korea',
+    name: 'JunHyeok', // named argument
+  ));
+  // print(sayHello()); // error when default value is not defined.
+  sayHello(
+    name: 'asd',
+    age: 23,
+    country: 'Korea',
+  ); // function auto formatt it.
 }

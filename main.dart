@@ -1,18 +1,15 @@
 void main() {
-  var player = { // Map<String, Object> player
-    'name': 'nico',
-    'xp': 19.99,
-    'superpower': false,
-  };
+  var numbers = {1, 2, 3, 4}; // Set<int> numbers
+  numbers.add(1);
+  numbers.add(1);
+  numbers.add(1);
+  numbers.add(1);
+  print(numbers); // items are unique.
 
-  Map<List<int>, bool> another_player = {
-    [1,2,3,4,5]: true,
-  };
+  List<int> wrong_numbers = [1, 2, 3, 4];
+  wrong_numbers.add(1);
+  wrong_numbers.add(1);
+  wrong_numbers.add(1);
 
-  List<Map<String, Object>> players = [
-    {
-      'name': 'nico',
-      'xp': 20000.99,
-    },
-  ]; // class is more better at API.
+  print(wrong_numbers);
 }

@@ -1,6 +1,19 @@
-String sayHello(String name, int age, [String? country = 'cuba']) => "Hello $name, you are $age, and you are come from $country";
+// String capitalizeName(String? name) {
+//   if (name != null) {
+//     return name.toUpperCase();
+//   }
+//   return 'ANON';
+// } is same below.
+
+String capitalizeName(String? name) => name?.toUpperCase() ?? 'ANON'; // is same as name != null ? name.toUpperCase() : 'ANON';
 
 void main() {
-  var result = sayHello('nico', 12);
-  print(result);
+  capitalizeName('JunHyeok');
+  capitalizeName(null);
+
+  String? name;
+  name ??= 'JunHyeok';
+  name = null;
+  name ??= 'another';
+  print(name);
 }

@@ -1,4 +1,11 @@
+import 'dart:ffi';
+
 void main() {
-    var name = "JunHyeok";
-    name = "Not JunHyeok";
+    dynamic name;
+    if (name is String) {
+      // changed possible methods to string
+    }
+    if (name is int) {
+      // changed possible methods to integer.
+    }
 }

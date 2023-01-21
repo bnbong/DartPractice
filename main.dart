@@ -1,9 +1,7 @@
 void main() {
-    late final String name;
-    // do something, go to api
+    // saving API keys ..
+    const API = '123123123';
 
-    // protect wrong code like print(name); because var name is not assigned.
-    name = 'JunHyeok';
-    // cannot do name = 'Other String';
-    // good at API, data fetching.
+    const max_allowed_price = 123;
+
 }

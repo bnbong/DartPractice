@@ -1,19 +1,19 @@
-// String capitalizeName(String? name) {
-//   if (name != null) {
-//     return name.toUpperCase();
-//   }
-//   return 'ANON';
-// } is same below.
+typedef ListOfInts = List<int>;
 
-String capitalizeName(String? name) => name?.toUpperCase() ?? 'ANON'; // is same as name != null ? name.toUpperCase() : 'ANON';
+
+ListOfInts reverseListOfNumbers(ListOfInts list) {
+  var reversed = list.reversed;
+
+  return reversed.toList();
+}
+
+typedef UserInfo = Map<String, String>;
+
+String sayHi(UserInfo userInfo) {
+  return "Hi ${userInfo['name']}";
+}
 
 void main() {
-  capitalizeName('JunHyeok');
-  capitalizeName(null);
-
-  String? name;
-  name ??= 'JunHyeok';
-  name = null;
-  name ??= 'another';
-  print(name);
+  print(reverseListOfNumbers([1,2,3]));
+  print(sayHi({'name': 'JunHyeok'}));
 }

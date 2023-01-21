@@ -1,9 +1,16 @@
 void main() {
-  String name = "Junhyeok";
-  bool alive = true;
-  int age = 12;
-  double money = 67.66;
+  var giveMeFive = true;
+  var numbers = [
+    1,
+    2,
+    3,
+    4,
+    if(giveMeFive) 5, // == if (giveMeFive) {numbers.add(5)}
+  ]; // auto formatting -> ctrl + shift + f
+  // same as List<int> number = [1, 2, 3, 4];
 
-  num x = 12; // father of double, int
-  x = 1.1;
+  // numbers.add(1);
+  // numbers.first;
+  // numbers.last;
+  print(numbers);
 }

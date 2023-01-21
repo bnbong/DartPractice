@@ -1,3 +1,4 @@
 void main() {
-    print('Hello world');
+    var name = "JunHyeok";
+    name = "Not JunHyeok";
 }

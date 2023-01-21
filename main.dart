@@ -1,21 +1,6 @@
-String sayHello({
-  required String name,
-  required int age,
-  required String country,
-}) {
-  return "Hello $name, you are $age, and you are come from $country";
-}
+String sayHello(String name, int age, [String? country = 'cuba']) => "Hello $name, you are $age, and you are come from $country";
 
 void main() {
-  print(sayHello(
-    age: 23,
-    country: 'Korea',
-    name: 'JunHyeok', // named argument
-  ));
-  // print(sayHello()); // error when default value is not defined.
-  sayHello(
-    name: 'asd',
-    age: 23,
-    country: 'Korea',
-  ); // function auto formatt it.
+  var result = sayHello('nico', 12);
+  print(result);
 }

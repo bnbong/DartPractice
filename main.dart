@@ -1,10 +1,6 @@
-import 'dart:ffi';
-
 void main() {
-    String? name = 'JunHyeok';
-    name = null;
-    // if (name != null) {
-    //   name.isNotEmpty;
-    // } same as below
-    name?.isNotEmpty;
+    final String name = 'JunHyeok';
+    // final name = "JunHyeok";
+
+    // cannot do name = 'Other string';    
 }

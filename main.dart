@@ -1,6 +1,9 @@
 void main() {
-    final String name = 'JunHyeok';
-    // final name = "JunHyeok";
+    late final String name;
+    // do something, go to api
 
-    // cannot do name = 'Other string';    
+    // protect wrong code like print(name); because var name is not assigned.
+    name = 'JunHyeok';
+    // cannot do name = 'Other String';
+    // good at API, data fetching.
 }

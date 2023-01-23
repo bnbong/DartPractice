@@ -1,6 +1,8 @@
 class Player {
-  String name = 'nico';
-  int xp = 1500;
+  final String name;
+  int xp;
+
+  Player(this.name, this.xp);
 
   void sayHello() {
     print("Hi my name is $name");
@@ -9,10 +11,9 @@ class Player {
 
 
 void main() {
-  var player = Player();
-  print(player.name);
-  player.name = 'JunHyeok';
-  print(player.name);
+  var player = Player("Junhyeok", 1500);
+  var player2 = Player("nico", 1000);
 
   player.sayHello();
+  player2.sayHello();
 }
